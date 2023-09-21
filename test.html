@@ -1,0 +1,112 @@
+<html>
+	<head>
+	<title> registration form </title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+	<style>
+	body {
+	color: #fff;
+	background-image: url("shop.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	}
+	h2{
+	color: #00fff2;
+	text-align: center;
+	margin: 0 0 15px;
+	position: relative;
+	}
+
+	.signup-form {
+    min-height: 100vh;
+    background-color: var(--light-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:2rem;
+	}
+  .signup-form form{
+    padding:2rem;
+    width: 50rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border:var(--border);
+    background-color: var(--white);
+    text-align: center;
+ }
+	
+	.button {
+	background-color: #4CAF50;
+	float:center;
+	border: none;
+	color: white;
+	padding: 26x 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 5px 35px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	}
+	.button1 {
+	background-color: white; 
+	color: black; 
+	border: 2px solid #4CAF50;
+	border-radius: 5px;
+	width: 100px;
+	}
+	.button1:hover {
+	background-color: #4CAF50;
+	color: white;
+	}
+  .signup-form form .box{
+    width: 100%;
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+    padding:1.2rem 1.4rem;
+    font-size: 1.8rem;
+    color:var(--black);
+    border:var(--border);
+    margin:1rem 0;
+ }
+
+	h1{
+		font-family: 'Berkshire Swash', cursive;
+		text-align: center;
+	}
+	input[type=text]{
+		border-radius: 5px;
+		height: 40px;
+	}
+	</style>
+	</head>
+	<body>
+    <h1>Shop prime</h1>
+		<h2>Create Account</h2>
+	<div class="signup-form">
+		
+					<form action="process.jsp" method="post">
+						<div class="boxes">
+							<input type="text" name="firstname" class="box" id="user" placeholder="FIRSTNAME"  size="12" required autocomplete="off">
+							<!---input type="text" name="middlename" class="a1" id="user" placeholder="MIDDLENAME" size="12" autocomplete="off"--->
+							<input type="text" name="lastname" class="box" id="user" placeholder="LASTNAME" size="12" required  autocomplete="off">
+						<br><br>
+							<input type="text" name="email" class="box" id="user" placeholder="EMAIL(abcd@gamil.com)" size="48" required autocomplete="off"><br><br>
+							<input type="text" name="mobile" class="box" id="user" placeholder="MOBILE NUMBER" size="48" required autocomplete="off"><br><br>
+						
+							<input type="text" name="password" class="box" id="user" placeholder="PASSWORD" size="48" required autocomplete="off"><br><br>
+							<input type="text" name="conpassword" class="box" id="user" placeholder="CONFORM PASSWORD" size="48" required autocomplete="off"><br><br>
+							<input type="checkbox" name="user" class="a1" id="user"><label>I accept the term of use & privacy policy</label><br><br>
+						</div>
+						<div class="a1">
+							<input type="submit" name="submit" value="submit">
+							<!--<button class="button button1"><p style="font-size: 13px;">Sign up</p></button>--->
+						</div>
+					</form>
+						<div><center>Already have an account? <a href="login.html">Sign in</a><center></div>
+	</div>
+	</body>
+
+</html>
